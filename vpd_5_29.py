@@ -63,7 +63,7 @@ def menu():
         if n == "3":
             try:
                 x = int(input("ВВедите значение x: "))
-                if x > -1 or x > 1:
+                if x < -1 or x > 1:
                     raise ValueError
                 print(f"{row_ch(x)}")
             except ValueError:
