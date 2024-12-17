@@ -52,20 +52,20 @@ def menu():
             break
         if n == "1":
             try:
-                print(f"{row_sin(x=int(input("ВВедите значение x: ")))}")
+                print(f"Значение sin(x): {row_sin(x=int(input("Введите значение x: ")))}")
             except ValueError:
                 print("Некоректный ввод")
         if n == "2":
             try:
-                print(f"{row_ch(x=int(input("ВВедите значение x: ")))}")
+                print(f"Значение ch(x): {row_ch(x=int(input("Введите значение x: ")))}")
             except ValueError:
                 print("Некоректный ввод")
         if n == "3":
             try:
-                x = int(input("ВВедите значение x: "))
+                x = float(input("Введите значение x: "))
                 if x < -1 or x > 1:
                     raise ValueError
-                print(f"{row_ch(x)}")
+                print(f"Значение arctg(x): {row_arctg(x)}")
             except ValueError:
                 print("Некоректный ввод")
 
