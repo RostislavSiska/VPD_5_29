@@ -1,7 +1,6 @@
 "vpd_5_29"
 
 from math import factorial
-from decimal import Decimal
 
 def row_sin(x, end=1000):
     "row Maklorena for sinx"
@@ -10,13 +9,50 @@ def row_sin(x, end=1000):
         summ = summ + (((-1)**i) * ((x**(2*i + 1))/(factorial(2*i + 1))))
     return summ
 
-print(row_sin(9))
-
-def row_chx(x, end=1000):
+def row_ch(x, end=1000):
     "row Maklorena for chx"
     summ = 0
     for i in range(end):
         summ = summ + ((x**(2*i))/(factorial(2*i)))
     return summ
 
-print(row_chx(Decimal(10)))
+def row_arctg(x, end=1000):
+    "Тема сделяль"
+    pass
+
+def menu():
+    "menu"
+    while True:
+        print("0.Выход\n\
+1.Функция sin(x)\n\
+2.Функция ch(x)\n\
+3.Функция arctg(x)")
+        try:
+            n = input("Введите номер операции: ")
+            if n.isdigit() is False or int(n)>4:
+                raise ValueError
+        except ValueError:
+            return print("Некоректный ввод")
+        if n == "0":
+            print("Пока.")
+            break
+        if n == "1":
+            try:
+                print(f"{row_sin(x=int(input("ВВедите значение x: ")))}")
+            except ValueError:
+                return print("Некоректный ввод")
+        if n == "2":
+            try:
+                print(f"{row_ch(x=int(input("ВВедите значение x: ")))}")
+            except ValueError:
+                return print("Некоректный ввод")
+        if n == "3":
+            try:
+                x = int(input("ВВедите значение x: "))
+                if x > -1 or x > 1:
+                    raise ValueError
+                print(f"{row_ch(x)}")
+            except ValueError:
+                return print("Некоректный ввод")
+
+menu()
