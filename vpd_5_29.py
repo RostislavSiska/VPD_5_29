@@ -3,14 +3,26 @@
 from math import factorial
 
 def row_sin(x, end=1000):
-    "row Maklorena for sinx"
+    """
+    Ищет значение ряда Маклорена для  sin(x).
+    
+    :param x: Значение x
+    :param end: Заданное значение для цикла for
+    :return: Значение sin(x)
+    """
     summ = 0
     for i in range(end):
         summ = summ + (((-1)**i) * ((x**(2*i + 1))/(factorial(2*i + 1))))
     return summ
 
 def row_ch(x, end=1000):
-    "row Maklorena for chx"
+    """
+    Ищет значение ряда Маклопена для ch(x).
+
+    :param x: Значение x
+    :param end: Заданное значения для цикла for
+    :return: Значение ch(x)
+    """
     summ = 0
     for i in range(end):
         summ = summ + ((x**(2*i))/(factorial(2*i)))
@@ -21,7 +33,9 @@ def row_arctg(x, end=1000):
     pass
 
 def menu():
-    "menu"
+    """
+    Пользовательское меню для выбора функций.
+    """
     while True:
         print("0.Выход\n\
 1.Функция sin(x)\n\
