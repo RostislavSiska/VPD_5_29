@@ -46,7 +46,7 @@ def menu():
             if n.isdigit() is False or int(n)>4:
                 raise ValueError
         except ValueError:
-            return print("Некоректный ввод")
+            print("Некоректный ввод")
         if n == "0":
             print("Пока.")
             break
@@ -54,12 +54,12 @@ def menu():
             try:
                 print(f"{row_sin(x=int(input("ВВедите значение x: ")))}")
             except ValueError:
-                return print("Некоректный ввод")
+                print("Некоректный ввод")
         if n == "2":
             try:
                 print(f"{row_ch(x=int(input("ВВедите значение x: ")))}")
             except ValueError:
-                return print("Некоректный ввод")
+                print("Некоректный ввод")
         if n == "3":
             try:
                 x = int(input("ВВедите значение x: "))
@@ -67,6 +67,6 @@ def menu():
                     raise ValueError
                 print(f"{row_ch(x)}")
             except ValueError:
-                return print("Некоректный ввод")
+                print("Некоректный ввод")
 
 menu()
