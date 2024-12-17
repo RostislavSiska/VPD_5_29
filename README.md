@@ -53,3 +53,6 @@ arctg(x) = $\displaystyle\sum_{i=0}^n\(-1)^{i}\frac{x^{2i+1}}{2i+1}\$,   -1 < x 
 ```
 
 ![smex](https://sun9-21.userapi.com/impg/0I6dJOR3TLsBhPP0NKUUis7nFM2DqN1CFzJjmA/_-cz5X9pqNc.jpg?size=735x716&quality=95&sign=82246d7f06b2963f10ddf510ed58e360&type=album)
+
+# [_Счастье_ __НЕ__ _за горами_](https://youtu.be/UZB-klaKXII?si=81QckuRa_3ImRyf2)
+![smex](https://sun9-55.userapi.com/impg/H6IGeV57A4Y4039Xa4F-FJz0tF2lC1GIJL1SfQ/TFW6wt4dMsI.jpg?size=620x310&quality=96&sign=ab69e4d9fa775bf72d64c329a76a643b&type=album)
