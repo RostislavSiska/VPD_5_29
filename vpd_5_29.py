@@ -1,6 +1,7 @@
 "vpd_5_29"
 
 from math import factorial
+from decimal import Decimal, InvalidOperation
 
 def row_sin(x, end=1000):
     """
@@ -57,8 +58,7 @@ def row_arctg(x, end=1000):
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡏⠀⡄⡀⠙⢾⣟⢯⣿⡿⠿⠿⢿⣿⣿⡿⣿⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠳⣤⣤⣤⣤⣼⣿⣿⡇⠈⠠⠄⠀⠙⣿⣿⡿⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠁⠁⠀⠀⠀⠘⠿⣭⣉⣉⣩⡵⠋⠀⠀⠀
-    """
-    """
+
     Ищет значение ряда Маклопена для arctg(x).
 
     :param x: Значение x
@@ -90,21 +90,21 @@ def menu():
             break
         if n == "1":
             try:
-                print(f"Значение sin(x): {row_sin(x=int(input("Введите значение x: ")))}")
-            except ValueError:
+                print(f"Значение sin(x): {row_sin(x=Decimal(input("Введите значение x: ")))}")
+            except InvalidOperation:
                 print("Некоректный ввод")
         if n == "2":
             try:
-                print(f"Значение ch(x): {row_ch(x=int(input("Введите значение x: ")))}")
-            except ValueError:
+                print(f"Значение ch(x): {row_ch(x=Decimal(input("Введите значение x: ")))}")
+            except InvalidOperation:
                 print("Некоректный ввод")
         if n == "3":
             try:
-                x = float(input("Введите значение x: "))
+                x = Decimal(input("Введите значение x: "))
                 if x < -1 or x > 1:
-                    raise ValueError
+                    raise InvalidOperation
                 print(f"Значение arctg(x): {row_arctg(x)}")
-            except ValueError:
+            except InvalidOperation:
                 print("Некоректный ввод")
 
 menu()
