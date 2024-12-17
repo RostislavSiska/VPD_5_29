@@ -1,5 +1,7 @@
 # VPD_5_29
 
+![э](https://psv4.userapi.com/s/v1/d/__GfMLJOQLVr1hvHY-jaXBtcfa-qHVsru0P685odvCJ0nAvJ5S68yJYHQ9418J6VGrtIvUR2DIPF62iG9C1cVpAIrc_c0xXVtHiBmcmrU_xzDPE_-bAdmA/ba9a1041-aedf-4322-b8bf-39c3c46a9e7e.jpg)
+
 - Функция 2 sin(x)
 - Функция 5 ch(x)
 - Функция 8 arctg(x) 
@@ -44,5 +46,10 @@ ch(x) = $\displaystyle\sum_{i=0}^n\frac{x^{2i}}{(2i)!}\$,   $-\infty\$ < x < $+\
 arctg(x) = $\displaystyle\sum_{i=0}^n\(-1)^{i}\frac{x^{2i+1}}{2i+1}\$,   -1 < x < 1
 
 ``` python
-    Здесь будет код
+    result = 0
+    for i in range(end):
+        result += ((-1) ** i) * (x ** (2 * i + 1)) / (2 * i + 1)
+    return result
 ```
+
+![smex](https://sun9-21.userapi.com/impg/0I6dJOR3TLsBhPP0NKUUis7nFM2DqN1CFzJjmA/_-cz5X9pqNc.jpg?size=735x716&quality=95&sign=82246d7f06b2963f10ddf510ed58e360&type=album)
